@@ -3,8 +3,8 @@ import  Link from "next/link";
 const Users =({users})=>{
 
     return (
-      <div className='container mx-auto'>
-
+      <div className=' mx-auto'>
+<h2 className="text-gray-500  mx-16">Sugerencias para ti</h2>
         <div className='flex justify-center'>
         <ul>
   
@@ -15,14 +15,15 @@ const Users =({users})=>{
           key={user.id}>
             <li
             onClick={()=>{console.log('holi');}}
-            className='bg-gray-700 mb-2 p-7 rounded-xl flex justify-between items-center'>
+            className='mb-2 p-4 rounded-xl flex justify-between items-center'>
   
-        <div className='' >
-  <h2 className='text-black font-bold p-8 ' >{user.id } {user.first_name} {user.last_name}
-  </h2>
-          <p>Email: {user.email}</p>
+          <img className=' rounded-full w-16' src={user.avatar} alt="" />
+        <div className='p-4' >
+  <p className='text-black font-bold p-2 text-1xl ' >{user.first_name} {user.last_name}
+  </p>
+          <p className="text-black text-1xl">Sugerencia para ti</p>
         </div>
-          <img className=' rounded-full' src={user.avatar} alt="" />
+        <button className="text-blue-400 text-1xl">Seguir</button>
         </li>
     </Link>
       ) )
