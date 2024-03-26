@@ -39,7 +39,7 @@ const page = async  () => {
 </div>
 
 
-<div  className='w-[30%]  bg-slate-50'>
+<div  className='w-[30%] '>
   <Users users={users}  />
 </div>
    </div>
