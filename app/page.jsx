@@ -21,29 +21,25 @@ const page = async  () => {
   const history = data.data.slice(1,10)
   console.log(users);
   return (
-  <div className='w-[95%] ' >
-<div  className='w-[40%] mx-auto'>
+  <div className=' ' >
+<div  className='lg:w-[40%]  w-full  mx-auto'>
 <Feed data={history}></Feed>
 </div>
-  <div className='flex w-screen ' >
-  
-    <div  className='w-[30%] '>
+<br />
+<div className='flex w-full lg:w-screen'>
+    <div className='w-[27%] hidden lg:block'>
       <p>
         <Menu></Menu>
-
       </p>
     </div>
-<div  className='w-[30%] '>
-  <Publicacion data={data}></Publicacion>
-  <p>1</p>
-
-</div>
-
-
-<div  className='w-[30%] '>
-  <Users users={users}  />
-</div>
-   </div>
+    <div className='lg:w-[35%] w-full'>
+      <Publicacion data={data}></Publicacion>
+    
+    </div>
+    <div className='w-[28%] justify-end items-end  hidden lg:block'>
+      <Users users={users} />
+    </div>
+  </div>
 
   </div>
   
