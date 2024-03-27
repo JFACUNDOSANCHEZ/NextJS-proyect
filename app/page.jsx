@@ -1,4 +1,4 @@
-import Nav from '@/components/Nav'
+import Publicacion from '@/components/Publicacion'
 import Users from '@/components/Users'
 import React from 'react'
 import Feed from '@/components/Feed'
@@ -34,6 +34,7 @@ const page = async  () => {
       </p>
     </div>
 <div  className='w-[30%] '>
+  <Publicacion data={data}></Publicacion>
   <p>1</p>
 
 </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Feed({data}) {
-  return (
+    return (
     <div className='  flex flex-wrap'>
       {
         data.map((user)=>{
